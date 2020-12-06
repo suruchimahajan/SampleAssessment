@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:padding="10dp"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screen2_ctlayout"
+        android:layout_width="512dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:id="@+id/screen2_imageView"
+            android:layout_width="174dp"
+            android:layout_height="197dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:padding="10dp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tx_imgtext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="56dp"
+            android:padding="10dp"
+            android:text="Image Text"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            card_view:layout_constraintLeft_toRightOf="@+id/screen2_imageView"
+            card_view:layout_constraintTop_toTopOf="@+id/screen2_imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
